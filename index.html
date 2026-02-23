@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DANZZ ID STORE</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+body{
+  background:url("https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg") no-repeat center center fixed;
+  background-size:cover;
+  color:white;
+}
+.overlay{background:rgba(0,0,0,0.35);min-height:100vh;padding:16px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+@keyframes blinkGlow{0%,100%{opacity:1;}50%{opacity:0.6;}}
+
+/* KATA-KATA SAMBUTAN BARU */
+.sambutan{
+  text-align:center;
+  font-size:38px; /* lebih besar */
+  font-weight:900;
+  color:#ff0000; /* MERAH */
+  text-shadow:0 0 10px #ff0000,0 0 15px #ffff00,0 0 20px #0000ff; /* MERAH + KUNING + BIRU */
+  margin-bottom:12px;
+  animation:fadeUp 1s ease, blinkGlow 3s infinite;
+}
+
+/* PRODUK */
+.products{
+  margin-top:15px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:14px;
+}
+.card{
+  background:#111;
+  border-radius:12px;
+  padding:10px;
+  box-shadow:0 0 15px red;
+  animation:fadeUp 1.5s ease;
+}
+.card img{width:100%;border-radius:10px;}
+.product-title{margin-top:6px;font-weight:bold;color:#00ffff;text-shadow:0 0 8px #00ffff;}
+.price{color:#ffea00;font-weight:bold;text-shadow:0 0 6px #ffea00;}
+.buy{display:block;margin-top:8px;text-align:center;padding:8px;background:linear-gradient(45deg,red,yellow);color:black;font-weight:bold;border-radius:8px;text-decoration:none;box-shadow:0 0 10px red;}
+
+/* PAYMENT */
+.payment{
+  margin-top:30px;
+  background:#111;
+  padding:16px;
+  border-radius:15px;
+  box-shadow:0 0 20px red;
+  animation:fadeUp 1.8s ease;
+}
+.pay-item{margin-bottom:14px;}
+button{
+  background:linear-gradient(45deg,#ff0000,#ffff00);
+  border:none;
+  padding:8px 14px;
+  font-weight:bold;
+  border-radius:8px;
+  cursor:pointer;
+  box-shadow:0 0 10px red;
+  width:100%;
+}
+button:hover{transform:scale(1.03);}
+.qris img{width:200px;margin-top:10px;border-radius:12px;box-shadow:0 0 15px red;}
+</style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<div class="overlay">
+
+<!-- KATA-KATA SAMBUTAN TERUPDATE -->
+<div class="sambutan">
+SELAMAT DATANG DI WEBSITE PRODUK KAMII DI DANZZ KANG VDAA
+</div>
+
+<div class="products">
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">MURID VDA</div>
+    <div class="price">10K</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20udah%20buy%20Murid%20VDA%20dan%20sudah%20bayar">BUY</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">MURID TEBAR DERESS</div>
+    <div class="price">10K</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20udah%20buy%20Murid%20Deress%20dan%20sudah%20bayar">BUY</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">JASA JEBOL VDAA</div>
+    <div class="price">INDO 10K | LUAR 15K</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20udah%20order%20Jasa%20Jebol%20VDAA">BUY</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">RESS FULL FF / ML</div>
+    <div class="price">HARGA KE ADMIN</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20mau%20order%20RESS%20FULL%20FF%20ML">CHAT ADMIN</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">NEBENG IMPULSE</div>
+    <div class="price">20K</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20udah%20buy%20Nebeng%20Impulse%20dan%20sudah%20bayar">BUY</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">JASA JOKI NEBAR 1 HARI</div>
+    <div class="price">10K (FF BETA ONLY)</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20order%20Jasa%20Joki%20Nebar%201%20Hari">BUY</a>
+  </div>
+
+  <div class="card">
+    <img src="https://i.postimg.cc/7hbHZyMn/IMG-20260223-064138.jpg">
+    <div class="product-title">AKUN PANCINGAN BUG V2L</div>
+    <div class="price">10K</div>
+    <a class="buy" href="https://wa.me/62882017281051?text=Min%20saya%20order%20Akun%20Pancingan%20Bug%20V2L">BUY</a>
+  </div>
+
+</div>
+
+<div class="payment">
+  <h2 style="color:#00ffff;text-shadow:0 0 10px #00ffff;">PAYMENT</h2>
+  <div class="pay-item">
+    GOPAY: 0882017281051
+    <button onclick="navigator.clipboard.writeText('0882017281051')">SALIN GOPAY</button>
+  </div>
+  <div class="pay-item">
+    DANA: 0881023613577
+    <button onclick="navigator.clipboard.writeText('0881023613577')">SALIN DANA</button>
+  </div>
+  <div class="pay-item">
+    QRIS ALL PAYMENT
+    <a href="https://img.sanishtech.com/u/a2bb6ca9ea9a47f369b0a62c957d2bd3.jpg" target="_blank">
+      <button>LIHAT QRIS</button>
+    </a>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
